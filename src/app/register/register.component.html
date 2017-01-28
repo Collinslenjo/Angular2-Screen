@@ -1,0 +1,16 @@
+<div class="header">
+	<div>Collo<span>Login</span></div>
+</div>
+	<br>
+<div class="login">
+<form name="userForm">
+	<input type="text" placeholder="username" name="username" ng-model="username"><br>
+	<input type="email" placeholder="email" name="email" ng-model="email"><br>
+	<input type="password" placeholder="password" name="password" ng-model="password"><br>
+	<input type="password" placeholder="Confirm password" name="confirmpassword" ng-model="confirmpassword"><br>
+	<input type="submit" value="Sign Up" ng-click="formsubmit(userForm.$valid)"  ng-disabled="userForm.$invalid">
+</form>
+	<pre ng-model="result">
+                {{result}}
+            </pre>
+</div>
